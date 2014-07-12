@@ -1,0 +1,45 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+	
+  ruby 2.1.2p95 (2014-05-08 revision 45877) [i686-linux]
+
+* System dependencies
+
+* Configuration
+  
+  default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  password: admin
+  host: localhost
+  port: 5432
+  pool: 5
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+rails generate bootstrap:install less
+rails g bootstrap:layout application fluid
+rails g scaffold Post title:string description:text tag:string referance url:string videourl:string image:string
+rake db:migrate
+rails g bootstrap:themed Posts
